@@ -5,7 +5,7 @@ from keras.preprocessing import image
 #-----------------------------
 #opencv initialization
 
-face_cascade = cv2.CascadeClassifier('C:/ProgramData/Anaconda3/envs/tensorflow/Library/etc/haarcascades/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('C:\Python39\Lib\site-packages\cv2\data\haarcascade_frontalface_default.xml')
 
 cap = cv2.VideoCapture(0)
 #-----------------------------
