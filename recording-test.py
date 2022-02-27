@@ -13,10 +13,10 @@ emotions = ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
 emotion_count, angry, disgust, fear, happy, sad, surprise, neutral = 0, 0, 0, 0, 0, 0, 0, 0
 
 # Comment out 1 vid_path line below for test
-# Single Head simple
-vid_path = "vids/exp_vid_test_1.mp4"
-# MultiHead
 #vid_path = "vids/exp_vid_multHead_test_1.mp4"
+#vid_path = "vids/exp_vid_test_1.mp4"
+#vid_path = "vids/exp_vid_zoom_test_1.mp4.mp4"
+vid_path ="vids/mini_zoom_test.mp4"
 
 # Text file for output
 f = open("output/emotional_analysis_output.txt", 'w')
