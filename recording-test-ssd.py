@@ -3,7 +3,8 @@ from keras.preprocessing import image
 import numpy as np
 from keras.models import model_from_json
 
-face_cascade = cv2.CascadeClassifier('C:\Python39\Lib\site-packages\cv2\data\haarcascade_frontalface_default.xml')
+#face_cascade = cv2.CascadeClassifier('C:\Python39\Lib\site-packages\cv2\data\haarcascade_frontalface_default.xml')
+detector = cv2.dnn.readNetFromCaffe("models-and-weights/deploy.prototxt" , "models-and-weights/res10_300x300_ssd_iter_140000.caffemodel")
 
 model = model_from_json(open("models-and-weights/facial_expression_model_structure.json", "r").read())
 model.load_weights('models-and-weights/facial_expression_model_weights.h5') #load weights
@@ -17,6 +18,19 @@ emotion_count, angry, disgust, fear, happy, sad, surprise, neutral = 0, 0, 0, 0,
 #vid_path = "vids/exp_vid_test_1.mp4"
 #vid_path = "vids/exp_vid_zoom_test_1.mp4"
 vid_path ="vids/screen_cap_zoom.mp4"
+
+# test image for ssd
+image = cv2.imread("pics/dan1.jpg")
+base_img = image.copy()
+original_size = base_img.shape
+target_size = (300, 300)
+image = cv2.resize(image, target_size)
+aspect_ratio_x = (original_size[1] / target_size[1])
+aspect_ratio_y = (original_size[0] / target_size[0])
+
+#detector expects (1, 3, 300, 300) shaped input
+imageBlob = cv2.dnn.blobFromImage(image = image)
+#imageBlob = np.expand_dims(np.rollaxis(image, 2, 0), axis = 0)
 
 # Text file for output
 f = open("output/emotional_analysis_output.txt", 'w')
