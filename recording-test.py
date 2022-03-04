@@ -14,9 +14,9 @@ emotion_count, angry, disgust, fear, happy, sad, surprise, neutral = 0, 0, 0, 0,
 
 # Comment out 1 vid_path line below for test
 #vid_path = "vids/exp_vid_multHead_test_1.mp4"
-vid_path = "vids/exp_vid_test_1.mp4"
-#vid_path = "vids/exp_vid_zoom_test_1.mp4.mp4"
-#vid_path ="vids/mini_zoom_test.mp4"
+#vid_path = "vids/exp_vid_test_1.mp4"
+#vid_path = "vids/exp_vid_zoom_test_1.mp4"
+vid_path ="vids/screen_cap_zoom.mp4"
 
 # Text file for output
 f = open("output/emotional_analysis_output.txt", 'w')
@@ -59,26 +59,26 @@ while(True):
 
             emotion = emotions[max_index]
 
-        # log max emotion
-        emotion_count += 1
-        if(emotion == "angry"):
-            angry += 1
-        elif(emotion == "disgust"):
-            disgust +=1
-        elif(emotion == "fear"):
-            fear +=1
-        elif(emotion == "happy"):
-            happy +=1
-        elif(emotion == "sad"):
-            sad +=1
-        elif(emotion == "surprise"):
-            surprise +=1
-        elif(emotion == "neutral"):
-            neutral +=1
+            # log max emotion
+            emotion_count += 1
+            if(emotion == "angry"):
+                angry += 1
+            elif(emotion == "disgust"):
+                disgust +=1
+            elif(emotion == "fear"):
+                fear +=1
+            elif(emotion == "happy"):
+                happy +=1
+            elif(emotion == "sad"):
+                sad +=1
+            elif(emotion == "surprise"):
+                surprise +=1
+            elif(emotion == "neutral"):
+                neutral +=1
 
 
-        #write emotion text above rectangle
-        cv2.putText(flipped_frame, emotion, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2)
+            # write emotion text above rectangle
+            cv2.putText(flipped_frame, emotion, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2)
         # Deepface end
 
         # Display the resulting frame
@@ -97,32 +97,32 @@ vid.release()
 # Destroy all the windows
 cv2.destroyAllWindows()
 
-# # Write emotion log output and close file
-# f.write("Emotions Counted: {}\n".format(emotion_count))
-# f.write("---Angry---\nCount: {}\nPercent:{}\n\n".format(angry, angry/emotion_count*100))
-# f.write("---Disgust---\nCount: {}\nPercent:{}\n\n".format(disgust, disgust/emotion_count*100))
-# f.write("---Fear---\nCount: {}\nPercent:{}\n\n".format(fear, fear/emotion_count*100))
-# f.write("---Happy---\nCount: {}\nPercent:{}\n\n".format(happy, happy/emotion_count*100))
-# f.write("---Sad---\nCount: {}\nPercent:{}\n\n".format(sad, sad/emotion_count*100))
-# f.write("---Surprise---\nCount: {}\nPercent:{}\n\n".format(surprise, surprise/emotion_count*100))
-# f.write("---Neutral---\nCount: {}\nPercent:{}\n\n".format(neutral, neutral/emotion_count*100))
+# Write emotion log output and close file
+f.write("Emotions Counted: {}\n".format(emotion_count))
+f.write("---Angry---\nCount: {}\nPercent:{}\n\n".format(angry, angry/emotion_count*100))
+f.write("---Disgust---\nCount: {}\nPercent:{}\n\n".format(disgust, disgust/emotion_count*100))
+f.write("---Fear---\nCount: {}\nPercent:{}\n\n".format(fear, fear/emotion_count*100))
+f.write("---Happy---\nCount: {}\nPercent:{}\n\n".format(happy, happy/emotion_count*100))
+f.write("---Sad---\nCount: {}\nPercent:{}\n\n".format(sad, sad/emotion_count*100))
+f.write("---Surprise---\nCount: {}\nPercent:{}\n\n".format(surprise, surprise/emotion_count*100))
+f.write("---Neutral---\nCount: {}\nPercent:{}\n\n".format(neutral, neutral/emotion_count*100))
 
-# # log max emotion
-# dom_emo = max(angry, disgust, fear, happy, sad, surprise, neutral)
-# if(dom_emo == angry):
-#     dom_emo_string = "Angry"
-# elif(dom_emo == disgust):
-#     dom_emo_string = "Disgust"
-# elif(dom_emo == fear):
-#     dom_emo_string = "Fear"
-# elif(dom_emo == happy):
-#     dom_emo_string = "Happy"
-# elif(dom_emo == sad):
-#     dom_emo_string = "Sad"
-# elif(dom_emo == surprise):
-#     dom_emo_string = "Surprise"
-# elif(dom_emo == neutral):
-#     dom_emo_string = "Neutral"
+# log max emotion
+dom_emo = max(angry, disgust, fear, happy, sad, surprise, neutral)
+if(dom_emo == angry):
+    dom_emo_string = "Angry"
+elif(dom_emo == disgust):
+    dom_emo_string = "Disgust"
+elif(dom_emo == fear):
+    dom_emo_string = "Fear"
+elif(dom_emo == happy):
+    dom_emo_string = "Happy"
+elif(dom_emo == sad):
+    dom_emo_string = "Sad"
+elif(dom_emo == surprise):
+    dom_emo_string = "Surprise"
+elif(dom_emo == neutral):
+    dom_emo_string = "Neutral"
 
-# f.write("Dominant Emotion: {}\n".format(dom_emo_string))
-# f.close()
+f.write("Dominant Emotion: {}\n".format(dom_emo_string))
+f.close()
