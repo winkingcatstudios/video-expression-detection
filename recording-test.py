@@ -40,6 +40,8 @@ while(True):
 
         # Get faces
         faces = face_cascade.detectMultiScale(grayed_frame, 1.3, 5)
+        #print(faces.size/4)    debug number of faces currently found
+        
         for (x,y,w,h) in faces:
             cv2.rectangle(flipped_frame,(x,y),(x+w,y+h),(255,0,0),2) #draw rectangle to main image
 
