@@ -1,31 +1,31 @@
 Output for test video: vids/screen_cap_zoom.mp4
-Emotions Counted: 588
+Emotions Counted: 9
 ---Angry---
-Count: 3
-Percent:0.5102040816326531
+Count: 0
+Percent:0.0
 
 ---Disgust---
 Count: 0
 Percent:0.0
 
 ---Fear---
-Count: 1
-Percent:0.17006802721088435
+Count: 0
+Percent:0.0
 
 ---Happy---
-Count: 456
-Percent:77.55102040816327
+Count: 7
+Percent:77.77777777777779
 
 ---Sad---
-Count: 19
-Percent:3.231292517006803
+Count: 1
+Percent:11.11111111111111
 
 ---Surprise---
 Count: 0
 Percent:0.0
 
 ---Neutral---
-Count: 109
-Percent:18.537414965986397
+Count: 1
+Percent:11.11111111111111
 
 Dominant Emotion: Happy

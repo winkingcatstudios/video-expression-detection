@@ -33,7 +33,7 @@ detections_df = pd.DataFrame(detections[0][0]
     , columns = ["img_id", "is_face", "confidence", "left", "top", "right", "bottom"])
 
 detections_df = detections_df[detections_df['is_face'] == 1] #0: background, 1: face
-detections_df = detections_df[detections_df['confidence'] >= 0.50]  # default: 0.90
+detections_df = detections_df[detections_df['confidence'] >= 0.25]  # default: 0.90
 
 print(detections_df.head())
 
