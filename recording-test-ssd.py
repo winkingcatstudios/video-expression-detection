@@ -16,8 +16,8 @@ emotion_count, angry, disgust, fear, happy, sad, surprise, neutral = 0, 0, 0, 0,
 # Comment out 1 vid_path line below for test
 #vid_path = "vids/exp_vid_multHead_test_1.mp4"
 #vid_path = "vids/exp_vid_test_1.mp4"
-#vid_path = "vids/exp_vid_zoom_test_1.mp4"
-vid_path ="vids/screen_cap_zoom.mp4"
+vid_path = "vids/exp_vid_zoom_test_1.mp4"
+#vid_path ="vids/screen_cap_zoom.mp4"
 
 # Text file for output
 f = open("output/emotional_analysis_output.txt", 'w')
