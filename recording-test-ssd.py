@@ -15,8 +15,8 @@ emotion_count, angry, disgust, fear, happy, sad, surprise, neutral = 0, 0, 0, 0,
 
 # Comment out 1 vid_path line below for test
 #vid_path = "vids/exp_vid_multHead_test_1.mp4"
-#vid_path = "vids/exp_vid_test_1.mp4"
-vid_path = "vids/exp_vid_zoom_test_1.mp4"
+vid_path = "vids/exp_vid_test_1.mp4"
+#vid_path = "vids/exp_vid_zoom_test_1.mp4"
 #vid_path ="vids/screen_cap_zoom.mp4"
 
 # Text file for output
@@ -52,7 +52,7 @@ while(True):
             , columns = ["img_id", "is_face", "confidence", "left", "top", "right", "bottom"])
 
         detections_df = detections_df[detections_df['is_face'] == 1] #0: background, 1: face
-        detections_df = detections_df[detections_df['confidence'] >= 0.25]  # default: 0.90
+        detections_df = detections_df[detections_df['confidence'] >= 0.50]  # default: 0.90
 
 
         for i, instance in detections_df.iterrows():
