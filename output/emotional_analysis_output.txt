@@ -1,31 +1,31 @@
-Output for test video: vids/exp_vid_test_1.mp4
-Emotions Counted: 437
+Output for test video: G:/My Drive/FromBox/(3-School)/22SP/CSCI 495/emotion_rec_test_1.mp4
+Emotions Counted: 162
 ---Angry---
-Count: 18
-Percent:4.118993135011442
+Count: 11
+Percent:6.790123456790123
 
 ---Disgust---
 Count: 0
 Percent:0.0
 
 ---Fear---
-Count: 35
-Percent:8.009153318077804
+Count: 31
+Percent:19.1358024691358
 
 ---Happy---
-Count: 214
-Percent:48.970251716247134
+Count: 0
+Percent:0.0
 
 ---Sad---
-Count: 64
-Percent:14.645308924485127
+Count: 4
+Percent:2.4691358024691357
 
 ---Surprise---
-Count: 1
-Percent:0.2288329519450801
+Count: 11
+Percent:6.790123456790123
 
 ---Neutral---
 Count: 105
-Percent:24.02745995423341
+Percent:64.81481481481481
 
-Dominant Emotion: Happy
+Dominant Emotion: Neutral
