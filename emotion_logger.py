@@ -5,6 +5,8 @@ from keras.preprocessing import image as kerasImage
 from keras.models import model_from_json
 
 vid_path = ""
+emotion_count, angry, disgust, fear, happy, sad, surprise, neutral = 0, 0, 0, 0, 0, 0, 0, 0
+dom_emo_string = ""
 
 def set_vid_path(path):
      global vid_path
@@ -18,7 +20,16 @@ def run():
     emotions = ('angry', 'disgust', 'fear', 'happy', 'sad', 'surprise', 'neutral')
 
     # vars to log emotion counts
-    emotion_count, angry, disgust, fear, happy, sad, surprise, neutral = 0, 0, 0, 0, 0, 0, 0, 0
+    global emotion_count
+    global angry
+    global disgust
+    global fear
+    global happy
+    global sad
+    global surprise
+    global neutral
+    global dom_emo_string
+    # emotion_count, angry, disgust, fear, happy, sad, surprise, neutral = 0, 0, 0, 0, 0, 0, 0, 0
 
     # Text file for output
     f = open("output/emotional_analysis_output.txt", 'w')

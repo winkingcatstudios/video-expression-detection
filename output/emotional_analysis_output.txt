@@ -1,31 +1,31 @@
-Output for test video: G:/My Drive/FromBox/(3-School)/22SP/CSCI 495/emotion_rec_test_1.mp4
-Emotions Counted: 162
+Output for test video: G:/My Drive/FromBox/(1-Personal)/PythonDev/videoExpressionDetection/video-expression-detection/vids/screen_cap_zoom.mp4
+Emotions Counted: 825
 ---Angry---
-Count: 11
-Percent:6.790123456790123
+Count: 10
+Percent:1.2121212121212122
 
 ---Disgust---
 Count: 0
 Percent:0.0
 
 ---Fear---
-Count: 31
-Percent:19.1358024691358
+Count: 116
+Percent:14.060606060606059
 
 ---Happy---
-Count: 0
-Percent:0.0
+Count: 465
+Percent:56.36363636363636
 
 ---Sad---
-Count: 4
-Percent:2.4691358024691357
+Count: 85
+Percent:10.303030303030303
 
 ---Surprise---
-Count: 11
-Percent:6.790123456790123
+Count: 77
+Percent:9.333333333333334
 
 ---Neutral---
-Count: 105
-Percent:64.81481481481481
+Count: 72
+Percent:8.727272727272728
 
-Dominant Emotion: Neutral
+Dominant Emotion: Happy
