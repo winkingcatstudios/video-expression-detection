@@ -1,31 +1,31 @@
-Output for test video: G:/My Drive/FromBox/(1-Personal)/PythonDev/videoExpressionDetection/video-expression-detection/vids/screen_cap_zoom.mp4
-Emotions Counted: 825
+Output for test video: C:/Users/dkercher/Desktop/vid-express-demo/video-expression-detection/vids/exp_vid_test_1.mp4
+Emotions Counted: 115
 ---Angry---
-Count: 10
-Percent:1.2121212121212122
+Count: 0
+Percent:0.0
 
 ---Disgust---
 Count: 0
 Percent:0.0
 
 ---Fear---
-Count: 116
-Percent:14.060606060606059
+Count: 0
+Percent:0.0
 
 ---Happy---
-Count: 465
-Percent:56.36363636363636
+Count: 43
+Percent:37.391304347826086
 
 ---Sad---
-Count: 85
-Percent:10.303030303030303
+Count: 2
+Percent:1.7391304347826086
 
 ---Surprise---
-Count: 77
-Percent:9.333333333333334
+Count: 0
+Percent:0.0
 
 ---Neutral---
-Count: 72
-Percent:8.727272727272728
+Count: 70
+Percent:60.86956521739131
 
-Dominant Emotion: Happy
+Dominant Emotion: Neutral
