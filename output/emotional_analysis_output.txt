@@ -1,31 +1,31 @@
-Output for test video: C:/Users/dkercher/Desktop/vid-express-demo/video-expression-detection/vids/exp_vid_test_1.mp4
-Emotions Counted: 115
+Output for test video: E:/Game Dev/Unity/Repos/video-expression-detection/vids/exp_vid_multHead_test_1.mp4
+Emotions Counted: 4350
 ---Angry---
-Count: 0
-Percent:0.0
+Count: 364
+Percent:8.367816091954023
 
 ---Disgust---
 Count: 0
 Percent:0.0
 
 ---Fear---
-Count: 0
-Percent:0.0
+Count: 867
+Percent:19.93103448275862
 
 ---Happy---
-Count: 43
-Percent:37.391304347826086
+Count: 280
+Percent:6.436781609195402
 
 ---Sad---
-Count: 2
-Percent:1.7391304347826086
+Count: 1243
+Percent:28.57471264367816
 
 ---Surprise---
-Count: 0
-Percent:0.0
+Count: 7
+Percent:0.16091954022988506
 
 ---Neutral---
-Count: 70
-Percent:60.86956521739131
+Count: 1589
+Percent:36.52873563218391
 
 Dominant Emotion: Neutral
